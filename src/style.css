@@ -201,6 +201,16 @@ body {
   ul.pizzas{
     display: block;
   }
+  div.pizza{
+    border: 1px solid #edc84b;
+    border-radius: 15px;
+    padding: 1em;
+    margin-top: 1em;
+    box-shadow: rgba(0, 0, 0, 0.2);
+  }
+  .pizza img:hover{
+    transform: scale(1.25);
+  }
   .pizza p {
     font-size: 1.3rem;
     font-weight: 700;
@@ -210,7 +220,6 @@ body {
   .pizza span {
     display: block;
     font-size: 1.4rem;
-    margin-bottom: 1em;
   }  
   .footer {
     padding-top: 3em;
