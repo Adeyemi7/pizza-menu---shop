@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './data.js';
 import './style.css';
+import './index.css'
 
 const pizzaData = [
     {
@@ -99,8 +100,8 @@ function Pizza(props) {
 
 function Footer() {
     const hour = new Date().getHours();
-    const openHour = 12;
-    const closedHour = 23;
+    const openHour = 1;
+    const closedHour = 22;
     const isOpen = hour >= openHour && hour <= closedHour;
     console.log(isOpen);
 
@@ -108,7 +109,7 @@ function Footer() {
         <footer className='footer'>
             {isOpen && (
                 <div className="order">
-                    <p>We're open until {closedHour}:00. Come visit us or order online.</p>
+                    <p>We're open until {closedHour}:00. Come visit us or order online  🍕✨.</p>
                     <button className="btn">Order</button>
                 </div>
             )}
